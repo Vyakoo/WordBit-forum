@@ -1,8 +1,16 @@
 <script>
 export default {
     props: ['active'],
-    emits: ['ActiveBar']
+    emits: ['ActiveBar'],
     
+    methods : {
+        MainPage() 
+        {
+            this.$router.push({
+                name: "Main"
+            });
+        }
+    }
 }
 
 </script>
@@ -20,7 +28,7 @@ export default {
                 <span></span>
             </button>
             <div id="header-right" :class="{'active': active}">
-                <a href="#home">Главная</a>
+                <a href="#home" @click="MainPage">Главная</a>
                 <a href="#contact">Контакты</a>
                 <a href="#about">О нас</a>
             </div>

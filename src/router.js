@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import PageArticle from './views/PageArticle.vue';
+import ArticlePage from './views/ArticlePage.vue';
+import MainPage from "./views/MainPage.vue";
 
 export default createRouter ({
     
@@ -9,9 +10,13 @@ export default createRouter ({
         {
             name: '/',
             path: '/',
-            component: PageArticle
+            component: ArticlePage
         },
-    
+        {
+            name: 'Main',
+            path: '/main',
+            component: MainPage
+        },
     ]
 });
 

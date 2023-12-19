@@ -1,10 +1,10 @@
 <script>
     import NavBar from './components/NavBar.vue';
     import SideBar from './components/SideBar.vue';
-    import Navigate from './components/Navigate.vue';
+
     import Foot from './components/Foot.vue';
 
-    import PageArticle from './views/PageArticle.vue';
+    import ArticlePage from './views/ArticlePage.vue';
     import { RouterView } from 'vue-router';
     import axios from "axios";
 
@@ -16,9 +16,8 @@
         {
             NavBar,
             SideBar,
-            Navigate,
             Foot,
-            PageArticle,
+            ArticlePage,
             RouterView
         },
 
@@ -57,7 +56,7 @@
     <div class="content">
         <SideBar class="item" @ActiveBar="ActiveBar" :active="active"></SideBar>
 
-        <router-view></router-view>
+        <router-view id="router-view"></router-view>
       
     </div>
 
@@ -69,6 +68,11 @@
 .content
 {
   display: flex;
+}
+
+#router-view 
+{
+    min-height: 100vh;
 }
 
 </style>
