@@ -9,6 +9,18 @@ export default {
             this.$router.push({
                 name: "Main"
             });
+        },
+        ContactsPage() 
+        {
+            this.$router.push({
+                name: "Contacts"
+            });
+        },
+        AboutUsPage() 
+        {
+            this.$router.push({
+                name: "AboutUs"
+            });
         }
     }
 }
@@ -29,8 +41,8 @@ export default {
             </button>
             <div id="header-right" :class="{'active': active}">
                 <a href="#home" @click="MainPage">Главная</a>
-                <a href="#contact">Контакты</a>
-                <a href="#about">О нас</a>
+                <a href="#contacts" @click="ContactsPage">Контакты</a>
+                <a href="#about" @click="AboutUsPage">О нас</a>
             </div>
         </div>
     </nav>

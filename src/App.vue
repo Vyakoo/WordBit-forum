@@ -1,10 +1,12 @@
 <script>
     import NavBar from './components/NavBar.vue';
     import SideBar from './components/SideBar.vue';
-
     import Foot from './components/Foot.vue';
 
     import ArticlePage from './views/ArticlePage.vue';
+    import ContactsPage from "./views/ContactsPage.vue";
+    import AboutUsPage from "./views/AboutUsPage.vue";
+
     import { RouterView } from 'vue-router';
     import axios from "axios";
 
@@ -18,6 +20,8 @@
             SideBar,
             Foot,
             ArticlePage,
+            ContactsPage,
+            AboutUsPage,
             RouterView
         },
 
