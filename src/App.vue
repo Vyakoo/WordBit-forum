@@ -36,6 +36,8 @@
             }
         },
         methods: {
+
+            /*
             ActiveBar(name) 
             {
                 switch (name.options) 
@@ -48,7 +50,7 @@
                         this.active.isActiveSideBar = !this.active.isActiveSideBar;
                         break;
                 }
-            }
+            } */
         }
     }
 </script>
